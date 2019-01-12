@@ -1,4 +1,4 @@
-package step1;
+package day1;
 
 public class TransportationWalk {
 

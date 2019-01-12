@@ -1,4 +1,4 @@
-package step1.battery;
+package day1.toy.battery;
 
 public interface Battery {
 

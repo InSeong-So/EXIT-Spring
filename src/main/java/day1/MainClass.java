@@ -1,4 +1,4 @@
-package step1;
+package day1;
 
 import org.springframework.context.support.GenericXmlApplicationContext;
 

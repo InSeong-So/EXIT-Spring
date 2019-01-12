@@ -1,7 +1,7 @@
-package step1.toy;
+package day1.toy.toy;
 
-import step1.battery.Battery;
-import step1.battery.NormalBattery;
+import day1.toy.battery.Battery;
+import day1.toy.battery.NormalBattery;
 
 public class ElectronicCarToy {
 
