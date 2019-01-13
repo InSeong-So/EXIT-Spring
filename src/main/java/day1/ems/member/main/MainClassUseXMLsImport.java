@@ -35,7 +35,7 @@ public class MainClassUseXMLsImport {
 				"Philosophy", "History", "Law", "Statistics", "Computer", "Economics", "Public Administration" };
 
 		// StudentAssembler assembler = new StudentAssembler();
-		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext("classpath:appCtxImport.xml");
+		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext("classpath:/day1/appCtxImport.xml");
 
 		EMSInformationService informationService = ctx.getBean("informationService", EMSInformationService.class);
 		informationService.outputEMSInformation();

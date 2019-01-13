@@ -35,7 +35,7 @@ public class MainClassUseXMLs {
 				"Philosophy", "History", "Law", "Statistics", "Computer", "Economics", "Public Administration" };
 
 		// StudentAssembler assembler = new StudentAssembler();
-		String[] appCtxs = { "classpath:appCtx1.xml", "classpath:appCtx2.xml", "classpath:appCtx3.xml" };
+		String[] appCtxs = { "classpath:appCtx1.xml", "classpath:appCtx2.xml", "classpath:/day1/appCtx3.xml" };
 		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext(appCtxs);
 
 		EMSInformationService informationService = ctx.getBean("informationService", EMSInformationService.class);
