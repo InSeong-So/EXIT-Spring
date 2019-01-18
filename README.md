@@ -290,3 +290,13 @@ public void setAdministrators(Map<String, String> administrators){
 		System.out.println("BookRegisterService 빈(Bean)객체 소멸 단계");
 	}
 ```
+
+<hr>
+
+### 어노테이션을 이용한 스프링 설정
+> 기존에 스프링 설정을 *.xml 파일로 설정했다면 이제 *.java 파일로 설정한다.
+>> 즉, applicationContext.xml 을 어노테이션을 활용한 config.java 파일로 대체한다는 것이다.
+```sh
+	@Configuration 어노테이션으로 설정 파일임을 알림
+	@Bean 어노테이션으로 빈 객체를 생성한다고 알림
+```
