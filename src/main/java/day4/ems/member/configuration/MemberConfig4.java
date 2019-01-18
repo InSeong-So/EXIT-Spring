@@ -17,7 +17,7 @@ import day1.ems.member.service.StudentRegisterService;
 import day1.ems.member.service.StudentSelectService;
 
 @Configuration
-public class MemberConfig {
+public class MemberConfig4 {
 
 	// <bean id="studentDao" class="day1.ems.member.dao.StudentDao" ></bean>
 	@Bean
@@ -74,7 +74,7 @@ public class MemberConfig {
 	}
 
 	@Bean
-	DataBaseConnectionInfo dataBaseConnectionInfoReal() {
+	public DataBaseConnectionInfo dataBaseConnectionInfoReal() {
 		DataBaseConnectionInfo infoReal = new DataBaseConnectionInfo();
 		infoReal.setJdbcUrl("jdbc:oracle:thin:@localhost:1521:xe");
 		infoReal.setUserId("scott");

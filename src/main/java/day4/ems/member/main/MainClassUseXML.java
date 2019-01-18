@@ -13,7 +13,7 @@ import day1.ems.member.service.StudentAllSelectService;
 import day1.ems.member.service.StudentModifyService;
 import day1.ems.member.service.StudentRegisterService;
 import day1.ems.member.service.StudentSelectService;
-import day4.ems.member.configuration.MemberConfig;
+import day4.ems.member.configuration.MemberConfig1;
 
 public class MainClassUseXML {
 
@@ -39,7 +39,17 @@ public class MainClassUseXML {
 		*/
 
 		// 객체 변경
-		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(MemberConfig.class);
+		/* AnnotationConfigApplicationContext ctx
+		 	= new AnnotationConfigApplicationContext(MemberConfig1.class);
+		*/
+
+		// 필요한 설정 파일을 배열 형태로 읽음
+		// AnnotationConfigApplicationContext ctx = new
+		// AnnotationConfigApplicationContext(MemberConfig1.class,
+		// MemberConfig2.class, MemberConfig3.class);
+
+		// @import 어노테이션 사용
+		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(MemberConfig1.class);
 
 		EMSInformationService informationService = ctx.getBean("informationService", EMSInformationService.class);
 		informationService.outputEMSInformation();

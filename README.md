@@ -300,3 +300,25 @@ public void setAdministrators(Map<String, String> administrators){
 	@Configuration 어노테이션으로 설정 파일임을 알림
 	@Bean 어노테이션으로 빈 객체를 생성한다고 알림
 ```
+
+#### Java 파일 분리
+> *.xml 파일을 분리하여 유지하는 것처럼, *.java 파일도 동일하게 분리하여 관리할 수 있다.
+>> 이유는 설정 파일의 내부 코드가 길어지면 직관성이 떨어지고 유지보수에 어려움이 생길 수 있기 때문이다.
+```sh
+마음대로 분리해도 상관 없으나, 분류를 나누어 분리하는 것이 좋다.
+```
+
+#### @Import 어노테이션
+```sh
+# 변경 전
+	AnnotationConfigApplicationContext ctx
+		= new AnnotationConfigApplicationContext(MemberConfig1.class,
+					MemberConfig2.class, MemberConfig3.class);
+					
+# 변경 후
+	@Configuration
+	@Import({ MemberConfig2.class, MemberConfig3.class})
+	public class MemberConfig1 {
+		...	...	...
+	}
+```
