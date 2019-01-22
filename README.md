@@ -460,3 +460,6 @@ View : 개발자가 처리해야 한다.
 ```
 
 `이런 구조이므로 서버, view 등 개발자가 작업을 분할하여 많이 사용된다.`
+
+# 스프링 MVC 웹 프로그래밍
+https://github.com/InSeong-So/Spring-MVC-basic
